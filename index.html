@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Book Tracker</h1>
+  </header>
+  <main>
+    <section id="add-book">
+      <h2>Add a New Book</h2>
+      <form id="book-form">
+        <input type="text" id="title" placeholder="Book Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="number" id="progress" placeholder="Progress (%)" min="0" max="100" required>
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+    <section id="reading-goals">
+      <h2>Set a Reading Goal</h2>
+      <form id="goal-form">
+        <input type="number" id="goal" placeholder="Goal (Books)" min="1" required>
+        <button type="submit">Set Goal</button>
+      </form>
+      <p id="goal-status"></p>
+    </section>
+    <section id="book-list">
+      <h2>Your Books</h2>
+      <ul id="books"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>Book Tracker App © 2025</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
